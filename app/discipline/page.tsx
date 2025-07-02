@@ -1,5 +1,8 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
+import { 
+  User, Users, Baby, Heart, Zap, Target, Gamepad2, CheckCircle, Sparkles, Flame, Swords, Video, Activity, Trophy, Scale, Wind, BicepsFlexed, Brain
+} from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Discipline - Judo, Taiso, Chambara | ASD Judo Kodokan Lentini',
@@ -27,7 +30,7 @@ export default function Discipline() {
             <div>
               <div className="flex items-center mb-6">
                 <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-white text-2xl">🥋</span>
+                  <Trophy className="w-8 h-8 text-white" />
                 </div>
                 <div>
                   <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Judo</h2>
@@ -43,21 +46,21 @@ export default function Discipline() {
               
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
-                  <span className="text-red-500 mt-1">✓</span>
+                  <CheckCircle className="w-5 h-5 text-red-500 mt-1" />
                   <div>
                     <h4 className="font-semibold text-gray-900">Discipline Olimpica</h4>
                     <p className="text-gray-600">Sport riconosciuto a livello mondiale</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <span className="text-red-500 mt-1">✓</span>
+                  <CheckCircle className="w-5 h-5 text-red-500 mt-1" />
                   <div>
                     <h4 className="font-semibold text-gray-900">Preparazione Agonistica</h4>
                     <p className="text-gray-600">Allenamenti tecnici, tattici e agonistici</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <span className="text-red-500 mt-1">✓</span>
+                  <CheckCircle className="w-5 h-5 text-red-500 mt-1" />
                   <div>
                     <h4 className="font-semibold text-gray-900">Sviluppo del Carattere</h4>
                     <p className="text-gray-600">Disciplina, rispetto e autocontrollo</p>
@@ -72,23 +75,33 @@ export default function Discipline() {
               </h3>
               <ul className="space-y-3">
                 <li className="flex items-center space-x-3">
-                  <span className="text-red-600">🥋</span>
+                  <div className="w-6 h-6 bg-red-600/20 rounded-full flex items-center justify-center">
+                    <Trophy className="w-4 h-4 text-red-600" />
+                  </div>
                   <span>Tecniche di proiezione (Nage-waza)</span>
                 </li>
                 <li className="flex items-center space-x-3">
-                  <span className="text-red-600">🤼</span>
+                  <div className="w-6 h-6 bg-red-600/20 rounded-full flex items-center justify-center">
+                    <Users className="w-4 h-4 text-red-600" />
+                  </div>
                   <span>Tecniche di controllo a terra (Ne-waza)</span>
                 </li>
                 <li className="flex items-center space-x-3">
-                  <span className="text-red-600">🧘</span>
+                  <div className="w-6 h-6 bg-red-600/20 rounded-full flex items-center justify-center">
+                    <User className="w-4 h-4 text-red-600" />
+                  </div>
                   <span>Tecniche di caduta (Ukemi)</span>
                 </li>
                 <li className="flex items-center space-x-3">
-                  <span className="text-red-600">⚡</span>
+                  <div className="w-6 h-6 bg-red-600/20 rounded-full flex items-center justify-center">
+                    <Zap className="w-4 h-4 text-red-600" />
+                  </div>
                   <span>Preparazione fisica specifica</span>
                 </li>
                 <li className="flex items-center space-x-3">
-                  <span className="text-red-600">🧠</span>
+                  <div className="w-6 h-6 bg-red-600/20 rounded-full flex items-center justify-center">
+                    <Target className="w-4 h-4 text-red-600" />
+                  </div>
                   <span>Tattica e strategia di combattimento</span>
                 </li>
               </ul>
@@ -106,28 +119,40 @@ export default function Discipline() {
                 Benefici della Taiso
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="text-center p-4 bg-white rounded-lg">
-                  <span className="text-2xl mb-2 block">🤸‍♀️</span>
+                <div className="text-center p-4 bg-white rounded-lg hover:bg-gray-50 transition-colors duration-300">
+                  <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center mb-2 mx-auto">
+                    <Activity className="w-6 h-6 text-green-500" />
+                  </div>
                   <p className="font-semibold text-sm">Flessibilità</p>
                 </div>
-                <div className="text-center p-4 bg-white rounded-lg">
-                  <span className="text-2xl mb-2 block">⚖️</span>
+                <div className="text-center p-4 bg-white rounded-lg hover:bg-gray-50 transition-colors duration-300">
+                  <div className="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center mb-2 mx-auto">
+                    <Scale className="w-6 h-6 text-blue-500" />
+                  </div>
                   <p className="font-semibold text-sm">Equilibrio</p>
                 </div>
-                <div className="text-center p-4 bg-white rounded-lg">
-                  <span className="text-2xl mb-2 block">🫁</span>
+                <div className="text-center p-4 bg-white rounded-lg hover:bg-gray-50 transition-colors duration-300">
+                  <div className="w-12 h-12 bg-cyan-500/20 rounded-full flex items-center justify-center mb-2 mx-auto">
+                    <Wind className="w-6 h-6 text-cyan-500" />
+                  </div>
                   <p className="font-semibold text-sm">Respirazione</p>
                 </div>
-                <div className="text-center p-4 bg-white rounded-lg">
-                  <span className="text-2xl mb-2 block">💪</span>
+                <div className="text-center p-4 bg-white rounded-lg hover:bg-gray-50 transition-colors duration-300">
+                  <div className="w-12 h-12 bg-orange-500/20 rounded-full flex items-center justify-center mb-2 mx-auto">
+                    <BicepsFlexed className="w-6 h-6 text-orange-500" />
+                  </div>
                   <p className="font-semibold text-sm">Forza Muscolare</p>
                 </div>
-                <div className="text-center p-4 bg-white rounded-lg">
-                  <span className="text-2xl mb-2 block">🧘‍♂️</span>
+                <div className="text-center p-4 bg-white rounded-lg hover:bg-gray-50 transition-colors duration-300">
+                  <div className="w-12 h-12 bg-purple-500/20 rounded-full flex items-center justify-center mb-2 mx-auto">
+                    <Brain className="w-6 h-6 text-purple-500" />
+                  </div>
                   <p className="font-semibold text-sm">Concentrazione</p>
                 </div>
-                <div className="text-center p-4 bg-white rounded-lg">
-                  <span className="text-2xl mb-2 block">❤️</span>
+                <div className="text-center p-4 bg-white rounded-lg hover:bg-gray-50 transition-colors duration-300">
+                  <div className="w-12 h-12 bg-red-500/20 rounded-full flex items-center justify-center mb-2 mx-auto">
+                    <Heart className="w-6 h-6 text-red-500" />
+                  </div>
                   <p className="font-semibold text-sm">Cardio</p>
                 </div>
               </div>
@@ -136,7 +161,7 @@ export default function Discipline() {
             <div className="order-1 lg:order-2">
               <div className="flex items-center mb-6">
                 <div className="w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-white text-2xl">🧘‍♂️</span>
+                  <Heart className="w-8 h-8 text-white" />
                 </div>
                 <div>
                   <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Taiso</h2>
@@ -160,11 +185,15 @@ export default function Discipline() {
               <div className="space-y-2">
                 <h4 className="font-semibold text-gray-900 mb-3">Due Versioni Disponibili:</h4>
                 <div className="flex items-center space-x-3">
-                  <span className="text-yellow-500">🌸</span>
+                  <div className="w-6 h-6 bg-yellow-500/20 rounded-full flex items-center justify-center">
+                    <Sparkles className="w-4 h-4 text-yellow-500" />
+                  </div>
                   <span><strong>Taiso Dolce:</strong> per l&apos;equilibrio energetico dell&apos;organismo</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <span className="text-orange-500">🔥</span>
+                  <div className="w-6 h-6 bg-orange-500/20 rounded-full flex items-center justify-center">
+                    <Flame className="w-4 h-4 text-orange-500" />
+                  </div>
                   <span><strong>Taiso Forte:</strong> per lo sviluppo della forza muscolare</span>
                 </div>
               </div>
@@ -180,7 +209,7 @@ export default function Discipline() {
             <div>
               <div className="flex items-center mb-6">
                 <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-white text-2xl">⚔️</span>
+                  <Swords className="w-8 h-8 text-white" />
                 </div>
                 <div>
                   <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Chambara</h2>
@@ -196,21 +225,27 @@ export default function Discipline() {
               
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
-                  <span className="text-yellow-500 mt-1">⚡</span>
+                  <div className="w-6 h-6 bg-yellow-500/20 rounded-full flex items-center justify-center mt-1">
+                    <Zap className="w-4 h-4 text-yellow-500" />
+                  </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Sviluppo dei Riflessi</h4>
                     <p className="text-gray-600">Reazioni rapide e istintive</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <span className="text-yellow-500 mt-1">🎯</span>
+                  <div className="w-6 h-6 bg-yellow-500/20 rounded-full flex items-center justify-center mt-1">
+                    <Target className="w-4 h-4 text-yellow-500" />
+                  </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Coordinazione Motoria</h4>
                     <p className="text-gray-600">Movimenti precisi e controllati</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <span className="text-yellow-500 mt-1">🎮</span>
+                  <div className="w-6 h-6 bg-yellow-500/20 rounded-full flex items-center justify-center mt-1">
+                    <Gamepad2 className="w-4 h-4 text-yellow-500" />
+                  </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Attività Ludica</h4>
                     <p className="text-gray-600">Divertimento e formazione insieme</p>
@@ -219,7 +254,10 @@ export default function Discipline() {
               </div>
               
               <div className="mt-8 p-4 bg-yellow-50 rounded-lg">
-                <h4 className="font-semibold text-gray-900 mb-2">🎥 Guarda le Nostre Dimostrazioni</h4>
+                <h4 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
+                  <Video className="w-5 h-5 text-yellow-600" />
+                  Guarda le Nostre Dimostrazioni
+                </h4>
                 <a
                   href="https://www.youtube.com/watch?v=dUIdpz951qI"
                   target="_blank"
@@ -236,22 +274,28 @@ export default function Discipline() {
                 Perfetto Per
               </h3>
               <div className="space-y-4">
-                <div className="flex items-center space-x-4 p-4 bg-white rounded-lg">
-                  <span className="text-3xl">👶</span>
+                <div className="flex items-center space-x-4 p-4 bg-white rounded-lg hover:bg-yellow-50 transition-colors duration-300">
+                  <div className="w-12 h-12 bg-yellow-500/20 rounded-full flex items-center justify-center">
+                    <Baby className="w-6 h-6 text-yellow-500" />
+                  </div>
                   <div>
                     <p className="font-semibold">Bambini</p>
                     <p className="text-gray-600 text-sm">Sviluppo psicomotorio</p>
                   </div>
                 </div>
-                <div className="flex items-center space-x-4 p-4 bg-white rounded-lg">
-                  <span className="text-3xl">🧑</span>
+                <div className="flex items-center space-x-4 p-4 bg-white rounded-lg hover:bg-yellow-50 transition-colors duration-300">
+                  <div className="w-12 h-12 bg-yellow-500/20 rounded-full flex items-center justify-center">
+                    <User className="w-6 h-6 text-yellow-500" />
+                  </div>
                   <div>
                     <p className="font-semibold">Adulti</p>
                     <p className="text-gray-600 text-sm">Stress relief e fitness</p>
                   </div>
                 </div>
-                <div className="flex items-center space-x-4 p-4 bg-white rounded-lg">
-                  <span className="text-3xl">👨‍👩‍👧‍👦</span>
+                <div className="flex items-center space-x-4 p-4 bg-white rounded-lg hover:bg-yellow-50 transition-colors duration-300">
+                  <div className="w-12 h-12 bg-yellow-500/20 rounded-full flex items-center justify-center">
+                    <Users className="w-6 h-6 text-yellow-500" />
+                  </div>
                   <div>
                     <p className="font-semibold">Famiglie</p>
                     <p className="text-gray-600 text-sm">Attività condivisa</p>
