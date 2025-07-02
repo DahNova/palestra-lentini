@@ -134,10 +134,21 @@ export default function Footer() {
             </div>
             <div className="text-center md:text-right">
               <p className="text-gray-400 text-sm">
-                © 2024 ASD Judo Kodokan Lentini. Tutti i diritti riservati.
+                © 2025 ASD Judo Kodokan Lentini. Tutti i diritti riservati.
               </p>
               <p className="text-gray-400 text-xs mt-1">
                 🌟 Valutazione media: 5/5 (118 recensioni)
+              </p>
+              <p className="text-gray-400 text-xs mt-2">
+                Design by{' '}
+                <a
+                  href="https://github.com/DahNova/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-red-400 hover:text-red-300 transition-colors"
+                >
+                  Claudio Novaglio
+                </a>
               </p>
             </div>
           </div>
