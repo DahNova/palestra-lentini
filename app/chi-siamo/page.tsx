@@ -212,7 +212,7 @@ export default function ChiSiamo() {
             <div className="group bg-gray-200 rounded-2xl h-64 flex items-center justify-center hover:bg-gray-300 transition-colors duration-300 relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-yellow-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="text-center z-10">
-                <Image className="w-16 h-16 text-gray-400 mx-auto mb-4 group-hover:scale-110 transition-transform" alt="" />
+                <Image className="w-16 h-16 text-gray-400 mx-auto mb-4 group-hover:scale-110 transition-transform" />
                 <p className="text-gray-500 font-medium">Michele Ciciulla</p>
                 <p className="text-gray-400 text-sm mt-1">Istruttore Principale</p>
               </div>
@@ -221,7 +221,7 @@ export default function ChiSiamo() {
             <div className="group bg-gray-200 rounded-2xl h-64 flex items-center justify-center hover:bg-gray-300 transition-colors duration-300 relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-yellow-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="text-center z-10">
-                <Image className="w-16 h-16 text-gray-400 mx-auto mb-4 group-hover:scale-110 transition-transform" alt="" />
+                <Image className="w-16 h-16 text-gray-400 mx-auto mb-4 group-hover:scale-110 transition-transform" />
                 <p className="text-gray-500 font-medium">Rossana Vacanti</p>
                 <p className="text-gray-400 text-sm mt-1">Insegnante Tecnico</p>
               </div>
@@ -230,7 +230,7 @@ export default function ChiSiamo() {
             <div className="group bg-gray-200 rounded-2xl h-64 flex items-center justify-center hover:bg-gray-300 transition-colors duration-300 relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-yellow-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="text-center z-10">
-                <Image className="w-16 h-16 text-gray-400 mx-auto mb-4 group-hover:scale-110 transition-transform" alt="" />
+                <Image className="w-16 h-16 text-gray-400 mx-auto mb-4 group-hover:scale-110 transition-transform" />
                 <p className="text-gray-500 font-medium">Team Training</p>
                 <p className="text-gray-400 text-sm mt-1">Lezione di gruppo</p>
               </div>
@@ -240,7 +240,7 @@ export default function ChiSiamo() {
             <div className="group bg-gray-200 rounded-2xl h-64 flex items-center justify-center hover:bg-gray-300 transition-colors duration-300 relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-yellow-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="text-center z-10">
-                <Image className="w-16 h-16 text-gray-400 mx-auto mb-4 group-hover:scale-110 transition-transform" alt="" />
+                <Image className="w-16 h-16 text-gray-400 mx-auto mb-4 group-hover:scale-110 transition-transform" />
                 <p className="text-gray-500 font-medium">Dojo Principale</p>
                 <p className="text-gray-400 text-sm mt-1">Tatami per Judo</p>
               </div>
@@ -249,7 +249,7 @@ export default function ChiSiamo() {
             <div className="group bg-gray-200 rounded-2xl h-64 flex items-center justify-center hover:bg-gray-300 transition-colors duration-300 relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-yellow-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="text-center z-10">
-                <Image className="w-16 h-16 text-gray-400 mx-auto mb-4 group-hover:scale-110 transition-transform" alt="" />
+                <Image className="w-16 h-16 text-gray-400 mx-auto mb-4 group-hover:scale-110 transition-transform" />
                 <p className="text-gray-500 font-medium">Sala Taiso</p>
                 <p className="text-gray-400 text-sm mt-1">Ginnastica Dolce</p>
               </div>
@@ -258,7 +258,7 @@ export default function ChiSiamo() {
             <div className="group bg-gray-200 rounded-2xl h-64 flex items-center justify-center hover:bg-gray-300 transition-colors duration-300 relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-yellow-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="text-center z-10">
-                <Image className="w-16 h-16 text-gray-400 mx-auto mb-4 group-hover:scale-110 transition-transform" alt="" />
+                <Image className="w-16 h-16 text-gray-400 mx-auto mb-4 group-hover:scale-110 transition-transform" />
                 <p className="text-gray-500 font-medium">Momenti Storici</p>
                 <p className="text-gray-400 text-sm mt-1">La nostra storia</p>
               </div>
