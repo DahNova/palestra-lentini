@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
 import { 
-  Star, Check, X, Users, Crown, Heart, Baby, Clock, Phone,
-  Trophy, Target, Zap, Gift, Calculator, CreditCard, Calendar,
-  Sparkles, Shield, Award, ArrowRight, User, Image
+  Star, Check, X, Users, Crown, Heart, Clock, Phone,
+  Trophy, Target, Gift, Calculator, CreditCard, Calendar,
+  Sparkles, Shield, ArrowRight, User, Image
 } from 'lucide-react';
 import { pacchetti, pacchettiFamiglia, opzioniPagamento, serviziInclusi, getColorClasses } from '../data/pacchetti';
 
@@ -305,7 +305,7 @@ export default function Pacchetti() {
               <div key={i} className="group bg-gray-200 rounded-2xl h-48 flex items-center justify-center hover:bg-gray-300 transition-colors duration-300 relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-yellow-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="text-center z-10">
-                  <Image className="w-12 h-12 text-gray-400 mx-auto mb-3 group-hover:scale-110 transition-transform" />
+                  <Image className="w-12 h-12 text-gray-400 mx-auto mb-3 group-hover:scale-110 transition-transform" alt="" />
                   <p className="text-gray-500 font-medium text-sm">
                     {i === 0 ? "Tatami Judo" :
                      i === 1 ? "Sala Taiso" :

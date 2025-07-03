@@ -160,7 +160,7 @@ export default function Discipline() {
               <div className="text-6xl mb-6">道</div>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
                 Il judo si basa su due principi fondamentali: <strong className="text-red-600">Seiryoku Zenyo</strong> 
-                (miglior impiego dell'energia) e <strong className="text-red-600">Jita Kyoei</strong> 
+                (miglior impiego dell&apos;energia) e <strong className="text-red-600">Jita Kyoei</strong> 
                 (prosperità e benessere reciproci). Questi valori guidano ogni aspetto della nostra pratica.
               </p>
               
@@ -171,7 +171,7 @@ export default function Discipline() {
                   </div>
                   <h4 className="font-bold text-gray-900 mb-2">Seiryoku Zenyo</h4>
                   <p className="text-gray-600 text-sm">
-                    Miglior impiego dell'energia fisica e mentale
+                    Miglior impiego dell&apos;energia fisica e mentale
                   </p>
                 </div>
                 <div className="text-center p-6 bg-white/60 rounded-xl">
