@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
-import { Users, Trophy, Award, Star, Castle, Music, User, Shield, Target } from 'lucide-react';
+import { Users, Trophy, Award, Star, Castle, Music, User, Shield, Target, Image, Camera } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Chi Siamo - ASD Judo Kodokan Lentini',
@@ -194,6 +194,79 @@ export default function ChiSiamo() {
         </div>
       </section>
 
+      {/* Galleria Staff e Palestra */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gradient-red mb-6 text-shadow">
+              Il Nostro Team in Azione
+            </h2>
+            <div className="w-32 h-1 bg-gradient-red mx-auto mb-6"></div>
+            <p className="text-xl text-gray-600 leading-relaxed">
+              Momenti della vita quotidiana della nostra associazione
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            {/* Foto Staff */}
+            <div className="group bg-gray-200 rounded-2xl h-64 flex items-center justify-center hover:bg-gray-300 transition-colors duration-300 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-yellow-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="text-center z-10">
+                <Image className="w-16 h-16 text-gray-400 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+                <p className="text-gray-500 font-medium">Michele Ciciulla</p>
+                <p className="text-gray-400 text-sm mt-1">Istruttore Principale</p>
+              </div>
+            </div>
+            
+            <div className="group bg-gray-200 rounded-2xl h-64 flex items-center justify-center hover:bg-gray-300 transition-colors duration-300 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-yellow-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="text-center z-10">
+                <Image className="w-16 h-16 text-gray-400 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+                <p className="text-gray-500 font-medium">Rossana Vacanti</p>
+                <p className="text-gray-400 text-sm mt-1">Insegnante Tecnico</p>
+              </div>
+            </div>
+            
+            <div className="group bg-gray-200 rounded-2xl h-64 flex items-center justify-center hover:bg-gray-300 transition-colors duration-300 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-yellow-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="text-center z-10">
+                <Image className="w-16 h-16 text-gray-400 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+                <p className="text-gray-500 font-medium">Team Training</p>
+                <p className="text-gray-400 text-sm mt-1">Lezione di gruppo</p>
+              </div>
+            </div>
+            
+            {/* Foto Palestra */}
+            <div className="group bg-gray-200 rounded-2xl h-64 flex items-center justify-center hover:bg-gray-300 transition-colors duration-300 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-yellow-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="text-center z-10">
+                <Image className="w-16 h-16 text-gray-400 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+                <p className="text-gray-500 font-medium">Dojo Principale</p>
+                <p className="text-gray-400 text-sm mt-1">Tatami per Judo</p>
+              </div>
+            </div>
+            
+            <div className="group bg-gray-200 rounded-2xl h-64 flex items-center justify-center hover:bg-gray-300 transition-colors duration-300 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-yellow-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="text-center z-10">
+                <Image className="w-16 h-16 text-gray-400 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+                <p className="text-gray-500 font-medium">Sala Taiso</p>
+                <p className="text-gray-400 text-sm mt-1">Ginnastica Dolce</p>
+              </div>
+            </div>
+            
+            <div className="group bg-gray-200 rounded-2xl h-64 flex items-center justify-center hover:bg-gray-300 transition-colors duration-300 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-yellow-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="text-center z-10">
+                <Image className="w-16 h-16 text-gray-400 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+                <p className="text-gray-500 font-medium">Momenti Storici</p>
+                <p className="text-gray-400 text-sm mt-1">La nostra storia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* La Nostra Filosofia */}
       <section className="py-20 bg-gradient-to-br from-red-50 to-yellow-50/30 relative overflow-hidden">
         <div className="absolute inset-0 pattern-seigaiha opacity-5"></div>
@@ -210,7 +283,7 @@ export default function ChiSiamo() {
           </div>
 
           <div className="space-y-8">
-            <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 lg:p-12 shadow-soft border border-white/50">
+            <div className="relative bg-white/90 rounded-3xl p-8 lg:p-12 shadow-soft border border-white/50">
               <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-gradient-red rounded-full flex items-center justify-center">
                 <span className="text-white text-xl">&ldquo;</span>
               </div>
@@ -232,7 +305,7 @@ export default function ChiSiamo() {
               </footer>
             </div>
 
-            <div className="glass bg-white/10 backdrop-blur-sm p-8 rounded-3xl border border-white/20">
+            <div className="bg-white/10 p-8 rounded-3xl border border-white/20">
               <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">
                 Il Nostro Approccio
               </h3>

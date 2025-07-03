@@ -29,7 +29,7 @@ export default function Footer() {
               </div>
             </div>
             
-            <div className="glass bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 group">
+            <div className="bg-white/10 rounded-2xl p-6 border border-white/10 group">
               <p className="text-gray-100 mb-6 leading-relaxed">
                 Associazione Sportiva Dilettantistica dedicata alla pratica e alla promozione 
                 delle arti marziali giapponesi, con particolare attenzione al judo e al 
@@ -80,12 +80,12 @@ export default function Footer() {
 
           {/* Navigation Links */}
           <div className="lg:col-span-3">
-            <div className="glass bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 h-full">
+            <div className="bg-white/10 rounded-2xl p-6 border border-white/10 h-full">
               <h4 className="text-xl font-bold text-gradient-red mb-6 flex items-center gap-2">
                 <Navigation className="w-5 h-5 text-red-400" />
                 Menu
               </h4>
-              <ul className="space-y-4">
+              <ul className="space-y-3">
                 <li>
                   <Link href="/" className="group flex items-center gap-3 text-gray-100 hover:text-white transition-colors duration-300">
                     <div className="w-1 h-1 bg-red-400 rounded-full group-hover:scale-150 transition-transform"></div>
@@ -105,6 +105,18 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/gare" className="group flex items-center gap-3 text-gray-100 hover:text-white transition-colors duration-300">
+                    <div className="w-1 h-1 bg-red-400 rounded-full group-hover:scale-150 transition-transform"></div>
+                    <span className="font-medium">Gare</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/pacchetti" className="group flex items-center gap-3 text-gray-100 hover:text-white transition-colors duration-300">
+                    <div className="w-1 h-1 bg-red-400 rounded-full group-hover:scale-150 transition-transform"></div>
+                    <span className="font-medium">Pacchetti</span>
+                  </Link>
+                </li>
+                <li>
                   <Link href="/contatti" className="group flex items-center gap-3 text-gray-100 hover:text-white transition-colors duration-300">
                     <div className="w-1 h-1 bg-red-400 rounded-full group-hover:scale-150 transition-transform"></div>
                     <span className="font-medium">Contatti</span>
@@ -116,7 +128,7 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div className="lg:col-span-4">
-            <div className="glass bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 h-full">
+            <div className="bg-white/10 rounded-2xl p-6 border border-white/10 h-full">
               <h4 className="text-xl font-bold text-gradient-red mb-6 flex items-center gap-2">
                 <Phone className="w-5 h-5 text-red-400" />
                 Contatti
@@ -170,14 +182,14 @@ export default function Footer() {
           
           <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
             {/* Affiliations */}
-            <div className="glass bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+            <div className="bg-white/10 rounded-2xl p-6 border border-white/10">
               <p className="text-gray-300 font-medium mb-3 flex items-center gap-2">
                 <Award className="w-5 h-5 text-yellow-400" />
                 Affiliati a:
               </p>
               <div className="flex flex-wrap gap-4">
                 <span className="px-4 py-2 bg-gradient-red rounded-xl text-white font-bold text-sm shadow-glow">CONI</span>
-                <span className="px-4 py-2 bg-gradient-gold rounded-xl text-red-900 font-bold text-sm shadow-gold">FOLKAM</span>
+                <span className="px-4 py-2 bg-gradient-gold rounded-xl text-red-900 font-bold text-sm shadow-gold">FIJLKAM</span>
                 <span className="px-4 py-2 bg-gradient-red rounded-xl text-white font-bold text-sm shadow-glow">CSEN</span>
               </div>
             </div>

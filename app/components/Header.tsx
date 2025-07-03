@@ -7,7 +7,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="glass bg-white/80 backdrop-blur-lg shadow-soft sticky top-0 z-50 border-b border-white/20">
+    <header className="bg-white shadow-soft sticky top-0 z-50 border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="flex items-center space-x-3 group">
@@ -21,7 +21,7 @@ export default function Header() {
             </div>
           </Link>
 
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-6">
             <Link href="/" className="relative text-gray-700 hover:text-red-600 font-medium transition-all duration-300 group">
               <span>Home</span>
               <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-red group-hover:w-full transition-all duration-300"></div>
@@ -32,6 +32,14 @@ export default function Header() {
             </Link>
             <Link href="/discipline" className="relative text-gray-700 hover:text-red-600 font-medium transition-all duration-300 group">
               <span>Discipline</span>
+              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-red group-hover:w-full transition-all duration-300"></div>
+            </Link>
+            <Link href="/gare" className="relative text-gray-700 hover:text-red-600 font-medium transition-all duration-300 group">
+              <span>Gare</span>
+              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-red group-hover:w-full transition-all duration-300"></div>
+            </Link>
+            <Link href="/pacchetti" className="relative text-gray-700 hover:text-red-600 font-medium transition-all duration-300 group">
+              <span>Pacchetti</span>
               <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-red group-hover:w-full transition-all duration-300"></div>
             </Link>
             <Link href="/contatti" className="relative text-gray-700 hover:text-red-600 font-medium transition-all duration-300 group">
@@ -80,6 +88,12 @@ export default function Header() {
               </Link>
               <Link href="/discipline" className="text-gray-700 hover:text-red-600 font-medium" onClick={() => setIsMenuOpen(false)}>
                 Discipline
+              </Link>
+              <Link href="/gare" className="text-gray-700 hover:text-red-600 font-medium" onClick={() => setIsMenuOpen(false)}>
+                Gare
+              </Link>
+              <Link href="/pacchetti" className="text-gray-700 hover:text-red-600 font-medium" onClick={() => setIsMenuOpen(false)}>
+                Pacchetti
               </Link>
               <Link href="/contatti" className="text-gray-700 hover:text-red-600 font-medium" onClick={() => setIsMenuOpen(false)}>
                 Contatti
