@@ -38,7 +38,7 @@ export interface RisultatoInterface {
 export const prossimeGare: GaraInterface[] = [
   {
     id: 1,
-    nome: "Trofeo Regionale Sicilia",
+    nome: "Trofeo Regionale Sicilia del Puzzo",
     data: "15 Marzo 2025",
     luogo: "Palestra Comunale - Catania",
     categoria: "Esordienti A/B",

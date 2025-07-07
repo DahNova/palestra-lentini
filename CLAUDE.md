@@ -74,3 +74,14 @@ The `ISTRUZIONI_CLIENTE.md` file (located in parent directory) contains comprehe
 - **Mobile-First**: All components must work on mobile devices
 - **Performance**: Build times may be long due to comprehensive TypeScript checking
 - **Content Strategy**: Designed for easy client updates without developer intervention
+
+## ESLint Configuration
+- **jsx-a11y/alt-text rule disabled**: Decorative Lucide React icons don't accept `alt` props
+- **Build Process**: Always run `npm run lint` and `npm run build` to verify changes before deployment
+- **Icons vs Images**: Lucide React `Image` components are SVG icons, not HTML `<img>` elements
+
+## Common Issues & Solutions
+- **Unescaped Apostrophes**: Use `&apos;` instead of `'` in JSX text content
+- **Unused Imports**: Remove unused Lucide React icon imports to pass TypeScript compilation
+- **Image Placeholders**: Use gray `bg-gray-200` blocks for missing images, avoid "foto in arrivo" text
+- **Build Errors**: TypeScript errors will prevent Vercel deployment - fix all type issues locally first
